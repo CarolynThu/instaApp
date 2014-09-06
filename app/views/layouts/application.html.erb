@@ -10,8 +10,20 @@
 </head>
 
 <body>
-  <div id='photos-wrap'></div>
-  <%= yield %>
-
+  <div id='photos-wrap'>
+    <form id='search'>
+      <button type='submit' id='search-button' tabindex='2'>
+        <span class='button-content'>Search</span>
+      </button>
+      <div class='search-wrap'>
+        <input class='search-tag' type='text' tabindex='1' />
+      </div>
+    </form>
+    <%= yield %>
+  </div>
 </body>
 </html>
+
+
+
+ 
